@@ -7,9 +7,17 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'test-app-1';
+  parentData: string = 'hello kiran';
 
-  // string interpolation
+  items = ['item1', 'item2', 'item3', 'item4'];
 
-  serverId: number = 3320;
-  serverName: string = 'https://localhost:3320/angular.io';
+  addItem(newItem: string) {
+    this.items.push(newItem);
+  }
+
+  list = ['hello'];
+
+  addList(newdata: string) {
+    this.list.push(newdata);
+  }
 }

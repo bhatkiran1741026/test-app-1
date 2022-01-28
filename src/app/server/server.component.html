@@ -1,1 +1,23 @@
-<p>server works!</p>
+<!-- string interpolation -->
+<p>The server Id : {{serverId}}</p>
+<p>The server Name : {{serverName}}</p>
+
+<!-- property Binding -->
+<button class="btn btn-primary" [disabled]="accessble">Check button </button>
+
+<!-- event Binding -->
+<hr>
+<h1>Server Status : {{serverStatus}}</h1>
+<button class="btn btn-danger" (click)="onClickBtn()">On Server </button>
+
+<!-- Data Passing using event binding -->
+<hr>
+{{serverData}}
+<br>
+<input type="text" (input)="onInput($event)">
+
+<!-- two way databinding -->
+<br>
+{{myName}}
+<br>
+<input type="text" [(ngModel)]="myName">
