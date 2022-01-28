@@ -20,4 +20,6 @@ export class AppComponent {
   addList(newdata: string) {
     this.list.push(newdata);
   }
+
+  dirList: number[] = [10, 20, 30, 40];
 }
